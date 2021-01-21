@@ -72,7 +72,8 @@ header img {
     display: flex;
     overflow-x: auto;
     flex-grow: 1 1;
-    scroll-snap-type: x mandatory;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
 }
 
 .overscroll:first-of-type, .overscroll:last-of-type {
