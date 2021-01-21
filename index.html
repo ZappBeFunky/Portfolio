@@ -3,45 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zapp DeFunky's  Portfolio</title>
-    <link rel="stylesheet" href="styles/default.css">
-    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 701px)">
-    <link rel="stylesheet" href="styles/desktop.css"  media="screen and (min-width: 992px)">
+    <title>Zapp BeFunky's  Portfolio</title>
+    <link rel="stylesheet" href="styles/default.css"/>
+    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 701px)"/>
+    <link rel="stylesheet" href="styles/desktop.css"  media="screen and (min-width: 992px)"/>
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <header><h1>Header!</h1></header>
+    <header>
+        <div class="container">
+            <img src="http://www.placecage.com/g/64/64" />
+        </div>
+    </header>
 
-    <div class="container">
-        <div><h1>This is Zapp</h1></div>
 
-        <div id="project-list">
-            <article class="project">
-                <img src="https://loremflickr.com/255/370"/>
+    <div class="content">
+        <h1 id="name" class="no-mobile">
+            <em>Zapp BeFunky</em>
+            <span class="no-mobile">Interaction Designer</span>
+            <span class="no-mobile">Product Designer</span>
+            <em>UI/UX Designer</em>
+        </h1>
 
-                <div class="description">
-                    <h2>Project Name</h2>
-                    <p>Et esse nostrud commodo ullamco nisi officia magna amet dolore elit quis ullamco commodo voluptate. Commodo anim sit exercitation voluptate labore duis Lorem consequat voluptate adipisicing. Consequat veniam voluptate est id. Eiusmod reprehenderit reprehenderit ut et. Aute nisi veniam reprehenderit magna anim sint esse incididunt.</p>
-                    <a href="case-study-1.html">View Case Study</a>
-                </div>
-            </article>
-
-            <hr/>
-
-            <article class="project">
-                <img src="https://loremflickr.com/255/370"/>
-
-                <div class="description">
-                    <h2>Project Name</h2>
-                    <p>Et esse nostrud commodo ullamco nisi officia magna amet dolore elit quis ullamco commodo voluptate. Commodo anim sit exercitation voluptate labore duis Lorem consequat voluptate adipisicing. Consequat veniam voluptate est id. Eiusmod reprehenderit reprehenderit ut et. Aute nisi veniam reprehenderit magna anim sint esse incididunt.</p>
-                    <a href="case-study-1.html">View Case Study</a>
-                </div>
-            </article>
-
-            <hr/>
+        <div class="container" id="project-list">
+            <div class="overscroll"></div>
             
-            <article class="project">
-                <img src="https://loremflickr.com/255/370"/>
+            <article id="project-1" class="project">
+                <div class="img"></div>
 
                 <div class="description">
                     <h2>Project Name</h2>
@@ -49,6 +38,42 @@
                     <a href="case-study-1.html">View Case Study</a>
                 </div>
             </article>
+
+            <div class="spacer no-mobile">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+
+            <article id="project-2" class="project">
+                <div class="img"></div>
+
+                <div class="description">
+                    <h2>Project Name</h2>
+                    <p>Et esse nostrud commodo ullamco nisi officia magna amet dolore elit quis ullamco commodo voluptate. Commodo anim sit exercitation voluptate labore duis Lorem consequat voluptate adipisicing. Consequat veniam voluptate est id. Eiusmod reprehenderit reprehenderit ut et. Aute nisi veniam reprehenderit magna anim sint esse incididunt.</p>
+                    <a href="case-study-1.html">View Case Study</a>
+                </div>
+            </article>
+
+            <div class="spacer no-mobile">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            
+            <article id="project-3" class="project">
+                <div class="img"></div>
+
+                <div class="description">
+                    <h2>Project Name</h2>
+                    <p>Et esse nostrud commodo ullamco nisi officia magna amet dolore elit quis ullamco commodo voluptate. Commodo anim sit exercitation voluptate labore duis Lorem consequat voluptate adipisicing. Consequat veniam voluptate est id. Eiusmod reprehenderit reprehenderit ut et. Aute nisi veniam reprehenderit magna anim sint esse incididunt.</p>
+                    <a href="case-study-1.html">View Case Study</a>
+                </div>
+            </article>
+
+            <div class="overscroll"></div>
         </div>
     </div>
 
