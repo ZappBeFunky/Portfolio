@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+}
+
+img {
+    display: block
+}
+
+header {
+    background-color: lightgray;
+    min-height: 64px;
+}
+
+footer {
+    min-height: 64px;
+}
+
+.no-mobile {
+    display: none;
+}
+
+.content {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container {
+    height: 80%;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    border-radius: 100%;
+}
+
+#name {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0.25em 0;
+    margin: 0;
+    width: 100%;
+}
+
+#name em {
+    display: block;
+    font-style: normal;
+}
+
+#name * {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#project-list {
+    display: flex;
+    overflow-x: auto;
+    flex-grow: 1 1;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+}
+
+.overscroll:first-of-type, .overscroll:last-of-type {
+    content: "";
+    flex: 1 0 4em;
+}
+
+.project {
+    scroll-snap-align: center;
+}
+
+.project .img {
+    border-radius: 15px;
+}
+
+#project-list::-webkit-scrollbar {
+    display: none;
+}
+
+.project .description {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.project .description p {
+    display: none;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5em;
+}
+
+.project .img {
+    content: "";
+    background-repeat: no-repeat no-repeat;
+    height: 100%;
+    width: 80vw;
+}
+
+#project-1 .img {
+    background-image: url(https://loremflickr.com/800/800?random=1);
+}
+
+#project-2 .img {
+    background-image: url(https://loremflickr.com/800/800?random=2);
+}
+
+#project-3 .img {
+    background-image: url(https://loremflickr.com/800/800?random=3);
+}
+
+a.case-study {
+    color: white;
+    background-color: rgb(62, 198, 255);
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+}
