@@ -15,15 +15,15 @@ gulp.task("css", function () {
   return gulp
     .src("./styles/*.css")
     .pipe(postcss([postcssPresetEnv()]))
-    .pipe(gulp.dest("./dist/styles"))
+    .pipe(gulp.dest("./styles"))
 })
 
 gulp.task("js", function () {
-  return gulp.src("./scripts/*.js").pipe(gulp.dest("./dist/scripts"))
+  return gulp.src("./scripts/*.js").pipe(gulp.dest("./scripts"))
 })
 
 gulp.task("html", function () {
-  return gulp.src("./*.html").pipe(useref()).pipe(gulp.dest("./dist"))
+  return gulp.src("./*.html").pipe(gulp.dest("."))
 })
 
 gulp.task("images", function () {
@@ -33,7 +33,4 @@ gulp.task("images", function () {
     .pipe(gulp.dest("./dist/images"))
 })
 
-gulp.task(
-  "build",
-  gulp.series("clean", gulp.parallel("css", "js", "html", "images"))
-)
+gulp.task("build", gulp.parallel("css", "js", "html", "images"))
