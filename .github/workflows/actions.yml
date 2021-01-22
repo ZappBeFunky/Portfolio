@@ -16,7 +16,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - run: git checkout -b buildbot
+      - run: |
+          git branch -d buildbot
+          git checkout main
+          git checkout -b buildbot
 
       - name: Build
         run: npm run build
