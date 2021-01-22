@@ -1,108 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zapp BeFunky's Portfolio</title>
+        <link rel="stylesheet" href="styles/default.css" />
+        <link
+            rel="stylesheet"
+            href="styles/tablet.css"
+            media="screen and (min-width: 701px)"
+        />
+        <link
+            rel="stylesheet"
+            href="styles/desktop.css"
+            media="screen and (min-width: 992px)"
+        />
+        <script src="scripts/main.js"></script>
+        <script
+            src="https://kit.fontawesome.com/8629546975.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="styles/header.css" />
+    </head>
 
-    <title>Zapp BeFunky's Portfolio</title>
-    <link rel="stylesheet" href="styles/default.css" />
-    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 701px)" />
-    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 992px)" />
-    <script src="scripts/main.js"></script>
-    <script src="https://kit.fontawesome.com/8629546975.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/header.css" />
-</head>
+    <body>
+        <header class="header">
+            <a href="" class="logo">CSS Nav</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"
+                ><span class="navicon"></span
+            ></label>
+            <ul class="menu">
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h1 id="name" class="no-mobile">
+                <em>Zapp BeFunky</em>
+                <span class="no-mobile">Interaction Designer</span>
+                <span class="no-mobile">Product Designer</span>
+                <em>UI/UX Designer</em>
+            </h1>
 
-<body>
-    <header class=" header">
-        <a href="" class="logo">CSS Nav</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a href="#work">Our Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#careers">Careers</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
-    <div class="content">
-        <h1 id="name" class="no-mobile">
-            <em>Zapp BeFunky</em>
-            <span class="no-mobile">Interaction Designer</span>
-            <span class="no-mobile">Product Designer</span>
-            <em>UI/UX Designer</em>
-        </h1>
+            <main class="container" id="project-list">
+                <div class="overscroll"></div>
 
-        <main class="container" id="project-list">
-            <div class="overscroll"></div>
+                <article id="project-1" class="project">
+                    <div class="img"></div>
 
-            <article id="project-1" class="project">
-                <div class="img"></div>
+                    <div class="description">
+                        <h2>Project Name</h2>
+                        <p>
+                            Et esse nostrud commodo ullamco nisi officia magna
+                            amet dolore elit quis ullamco commodo voluptate.
+                            Commodo anim sit exercitation voluptate labore duis
+                            Lorem consequat voluptate adipisicing. Consequat
+                            veniam voluptate est id. Eiusmod reprehenderit
+                            reprehenderit ut et. Aute nisi veniam reprehenderit
+                            magna anim sint esse incididunt.
+                        </p>
+                        <a class="case-study" href="case-study-1.html"
+                            >View Case Study</a
+                        >
+                    </div>
+                </article>
 
-                <div class="description">
-                    <h2>Project Name</h2>
-                    <p>Et esse nostrud commodo ullamco nisi officia magna amet dolore elit quis ullamco commodo
-                        voluptate. Commodo anim sit exercitation voluptate labore duis Lorem consequat voluptate
-                        adipisicing. Consequat veniam voluptate est id. Eiusmod reprehenderit reprehenderit ut et. Aute
-                        nisi veniam reprehenderit magna anim sint esse incididunt.</p>
-                    <a class="case-study" href="case-study-1.html">View Case Study</a>
+                <div class="spacer no-mobile">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
                 </div>
-            </article>
 
-            <div class="spacer no-mobile">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
+                <article id="project-2" class="project">
+                    <div class="img"></div>
 
-            <article id="project-2" class="project">
-                <div class="img"></div>
+                    <div class="description">
+                        <h2>Project Name</h2>
+                        <p>
+                            Et esse nostrud commodo ullamco nisi officia magna
+                            amet dolore elit quis ullamco commodo voluptate.
+                            Commodo anim sit exercitation voluptate labore duis
+                            Lorem consequat voluptate adipisicing. Consequat
+                            veniam voluptate est id. Eiusmod reprehenderit
+                            reprehenderit ut et. Aute nisi veniam reprehenderit
+                            magna anim sint esse incididunt.
+                        </p>
+                        <a class="case-study" href="case-study-1.html"
+                            >View Case Study</a
+                        >
+                    </div>
+                </article>
 
-                <div class="description">
-                    <h2>Project Name</h2>
-                    <p>Et esse nostrud commodo ullamco nisi officia magna amet dolore elit quis ullamco commodo
-                        voluptate. Commodo anim sit exercitation voluptate labore duis Lorem consequat voluptate
-                        adipisicing. Consequat veniam voluptate est id. Eiusmod reprehenderit reprehenderit ut et. Aute
-                        nisi veniam reprehenderit magna anim sint esse incididunt.</p>
-                    <a class="case-study" href="case-study-1.html">View Case Study</a>
+                <div class="spacer no-mobile">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
                 </div>
-            </article>
 
-            <div class="spacer no-mobile">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
+                <article id="project-3" class="project">
+                    <div class="img"></div>
 
-            <article id="project-3" class="project">
-                <div class="img"></div>
+                    <div class="description">
+                        <h2>Project Name</h2>
+                        <p>
+                            Et esse nostrud commodo ullamco nisi officia magna
+                            amet dolore elit quis ullamco commodo voluptate.
+                            Commodo anim sit exercitation voluptate labore duis
+                            Lorem consequat voluptate adipisicing. Consequat
+                            veniam voluptate est id. Eiusmod reprehenderit
+                            reprehenderit ut et. Aute nisi veniam reprehenderit
+                            magna anim sint esse incididunt.
+                        </p>
+                        <a class="case-study" href="case-study-1.html"
+                            >View Case Study</a
+                        >
+                    </div>
+                </article>
 
-                <div class="description">
-                    <h2>Project Name</h2>
-                    <p>Et esse nostrud commodo ullamco nisi officia magna amet dolore elit quis ullamco commodo
-                        voluptate. Commodo anim sit exercitation voluptate labore duis Lorem consequat voluptate
-                        adipisicing. Consequat veniam voluptate est id. Eiusmod reprehenderit reprehenderit ut et. Aute
-                        nisi veniam reprehenderit magna anim sint esse incididunt.</p>
-                    <a class="case-study" href="case-study-1.html">View Case Study</a>
-                </div>
-            </article>
-
-            <div class="overscroll"></div>
-        </main>
-    </div>
-
-    <footer>
-        <div class="flex-container">
-            <a class href="#"><i class="fab fa-linkedin"></i></a>
-            <a class href="#"><i class="fas fa-envelope"></i></a>
-            <a class href="#"><i class="fab fa-medium"></i></a>
-            <a class href="#"><i class="fab fa-dribbble-square"></i></a>
+                <div class="overscroll"></div>
+            </main>
         </div>
-        </div>
-    </footer>
-</body>
 
+        <footer>
+            <div class="flex-container">
+                <a class href="#"><i class="fab fa-linkedin"></i></a>
+                <a class href="#"><i class="fas fa-envelope"></i></a>
+                <a class href="#"><i class="fab fa-medium"></i></a>
+                <a class href="#"><i class="fab fa-dribbble-square"></i></a>
+            </div>
+        </footer>
+    </body>
 </html>
