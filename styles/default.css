@@ -1,23 +1,13 @@
-html, body {
-    height: 100%;
-}
-
 body {
     font-family: sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* overflow-y: hidden; */
     overflow-x: hidden;
 }
 
 img {
-    display: block
-}
-
-header {
-    background-color: lightgray;
-    min-height: 64px;
+    display: block;
 }
 
 footer {
@@ -29,43 +19,9 @@ footer {
 }
 
 .content {
-    height: 100%;
-    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-.container {
-    height: 80%;
-}
-
-header {
-    text-align: center;
-}
-
-header img {
-    border-radius: 100%;
-}
-
-#name {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 0.25em 0;
-    margin: 0;
-    width: 100%;
-}
-
-#name em {
-    display: block;
-    font-style: normal;
-}
-
-#name * {
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
 }
 
 #project-list {
@@ -75,13 +31,19 @@ header img {
     scroll-snap-type: x mandatory;
 }
 
-.overscroll:first-of-type, .overscroll:last-of-type {
+.overscroll:first-of-type,
+.overscroll:last-of-type {
     content: "";
     flex: 1 0 4em;
 }
 
 .project {
     scroll-snap-align: center;
+}
+
+.project h2,
+.project .case-study {
+    margin: 1.2rem 0;
 }
 
 .project .img {
@@ -95,33 +57,61 @@ header img {
 .project .description {
     display: flex;
     flex-direction: column;
-
     align-items: center;
 }
 
-.project .description p {
+.project p {
     display: none;
+}
+
+footer {
+    margin-top: 4rem;
+}
+
+footer .flex-container {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    background: black;
+}
+
+footer a {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin: 1rem;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
+    color: black;
 }
 
 .project {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0 0.5em;
 }
 
 .project .img {
     content: "";
     background-repeat: no-repeat no-repeat;
-    height: 100%;
+    height: 65vh;
     width: 80vw;
+    background-position: center center;
+    background-size: cover;
 }
 
 #project-1 .img {
-    background-image: url(https://loremflickr.com/800/800?random=1);
+    background-image: url(https://loremflickr.com/800/800?random=9);
 }
 
 #project-2 .img {
-    background-image: url(https://loremflickr.com/800/800?random=2);
+    background-image: url(https://loremflickr.com/800/800?random=8);
 }
 
 #project-3 .img {
@@ -134,4 +124,13 @@ a.case-study {
     padding: 0.75rem 1.5rem;
     border-radius: 1.5rem;
     text-decoration: none;
+}
+
+.intro {
+    padding: 2rem 2rem;
+    max-width: 65ch;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.25em;
+    font-size: 1.3rem;
 }

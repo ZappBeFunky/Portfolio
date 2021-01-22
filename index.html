@@ -1,83 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zapp BeFunky's  Portfolio</title>
-    <link rel="stylesheet" href="styles/default.css"/>
-    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 701px)"/>
-    <link rel="stylesheet" href="styles/desktop.css"  media="screen and (min-width: 992px)"/>
-    <script src="scripts/main.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body>
-    <header>
-        <div class="container">
-            <img src="http://www.placecage.com/g/64/64" />
-        </div>
-    </header>
+        <title>Zapp BeFunky's Portfolio</title>
+        <link rel="stylesheet" href="styles/default.css" />
+        <link
+            rel="stylesheet"
+            href="styles/tablet.css"
+            media="screen and (min-width: 701px)"
+        />
+        <link
+            rel="stylesheet"
+            href="styles/desktop.css"
+            media="screen and (min-width: 992px)"
+        />
+        <script src="scripts/main.js"></script>
+        <script
+            src="https://kit.fontawesome.com/8629546975.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="styles/header.css" />
+    </head>
 
-
-    <div class="content">
-        <h1 id="name" class="no-mobile">
-            <em>Zapp BeFunky</em>
-            <span class="no-mobile">Interaction Designer</span>
-            <span class="no-mobile">Product Designer</span>
-            <em>UI/UX Designer</em>
-        </h1>
-
-        <div class="container" id="project-list">
-            <div class="overscroll"></div>
-            
-            <article id="project-1" class="project">
-                <div class="img"></div>
-
-                <div class="description">
-                    <h2>Project Name</h2>
-                    <p>Et esse nostrud commodo ullamco nisi officia magna amet dolore elit quis ullamco commodo voluptate. Commodo anim sit exercitation voluptate labore duis Lorem consequat voluptate adipisicing. Consequat veniam voluptate est id. Eiusmod reprehenderit reprehenderit ut et. Aute nisi veniam reprehenderit magna anim sint esse incididunt.</p>
-                    <a class="case-study" href="case-study-1.html">View Case Study</a>
-                </div>
-            </article>
-
-            <div class="spacer no-mobile">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
+    <body>
+        <header class="header">
+            <div id="name">
+                <h1>Zapp BeFunky</h1>
+                <span class="no-mobile">Interaction Designer</span>
+                <span class="no-mobile">Product Designer</span>
+                <h1>UI/UX Designer</h1>
             </div>
 
-            <article id="project-2" class="project">
-                <div class="img"></div>
+            <nav id="navbar">
+                <input
+                    class="menu-btn mobile-only"
+                    type="checkbox"
+                    id="menu-btn"
+                />
+                <label class="menu-icon mobile-only" for="menu-btn"
+                    ><span class="navicon"></span
+                ></label>
 
-                <div class="description">
-                    <h2>Project Name</h2>
-                    <p>Et esse nostrud commodo ullamco nisi officia magna amet dolore elit quis ullamco commodo voluptate. Commodo anim sit exercitation voluptate labore duis Lorem consequat voluptate adipisicing. Consequat veniam voluptate est id. Eiusmod reprehenderit reprehenderit ut et. Aute nisi veniam reprehenderit magna anim sint esse incididunt.</p>
-                    <a class="case-study" href="case-study-1.html">View Case Study</a>
+                <ul class="menu">
+                    <a href="/"><li>Home</li></a>
+                    <a href="/about.html"><li>About Me</li></a>
+                    <a href="/"><li>Case Studies</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <p class="intro">
+                Hi, my name is Zapp BeFunky. Do you really want to know? Some
+                say I am so ruff, so tuff. I can make you dance! Let's take it
+                slow and easy because I want to be your man. It'll be alright.
+                There's 6 song titles in there. I'm a nerd.
+            </p>
+
+            <main class="container" id="project-list">
+                <div class="overscroll"></div>
+
+                <article id="project-1" class="project">
+                    <h2 class="mobile-only">Project Name</h2>
+                    <div class="img"></div>
+
+                    <div class="description">
+                        <h2 class="no-mobile">Project Name</h2>
+                        <p>
+                            Et esse nostrud commodo ullamco nisi officia magna
+                            amet dolore elit quis ullamco commodo voluptate.
+                            Commodo anim sit exercitation voluptate labore duis
+                            Lorem consequat voluptate adipisicing. Consequat
+                            veniam voluptate est id. Eiusmod reprehenderit
+                            reprehenderit ut et. Aute nisi veniam reprehenderit
+                            magna anim sint esse incididunt.
+                        </p>
+                        <a class="case-study" href="case-study-1.html"
+                            >View Case Study</a
+                        >
+                    </div>
+                </article>
+
+                <div class="spacer no-mobile">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
                 </div>
-            </article>
 
-            <div class="spacer no-mobile">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-            
-            <article id="project-3" class="project">
-                <div class="img"></div>
+                <article id="project-2" class="project">
+                    <h2 class="mobile-only">Project Name</h2>
+                    <div class="img"></div>
 
-                <div class="description">
-                    <h2>Project Name</h2>
-                    <p>Et esse nostrud commodo ullamco nisi officia magna amet dolore elit quis ullamco commodo voluptate. Commodo anim sit exercitation voluptate labore duis Lorem consequat voluptate adipisicing. Consequat veniam voluptate est id. Eiusmod reprehenderit reprehenderit ut et. Aute nisi veniam reprehenderit magna anim sint esse incididunt.</p>
-                    <a class="case-study" href="case-study-1.html">View Case Study</a>
+                    <div class="description">
+                        <h2 class="no-mobile">Project Name</h2>
+                        <p>
+                            Et esse nostrud commodo ullamco nisi officia magna
+                            amet dolore elit quis ullamco commodo voluptate.
+                            Commodo anim sit exercitation voluptate labore duis
+                            Lorem consequat voluptate adipisicing. Consequat
+                            veniam voluptate est id. Eiusmod reprehenderit
+                            reprehenderit ut et. Aute nisi veniam reprehenderit
+                            magna anim sint esse incididunt.
+                        </p>
+                        <a class="case-study" href="case-study-1.html"
+                            >View Case Study</a
+                        >
+                    </div>
+                </article>
+
+                <div class="spacer no-mobile">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
                 </div>
-            </article>
 
-            <div class="overscroll"></div>
+                <article id="project-3" class="project">
+                    <h2 class="mobile-only">Project Name</h2>
+                    <div class="img"></div>
+
+                    <div class="description">
+                        <h2 class="no-mobile">Project Name</h2>
+                        <p>
+                            Et esse nostrud commodo ullamco nisi officia magna
+                            amet dolore elit quis ullamco commodo voluptate.
+                            Commodo anim sit exercitation voluptate labore duis
+                            Lorem consequat voluptate adipisicing. Consequat
+                            veniam voluptate est id. Eiusmod reprehenderit
+                            reprehenderit ut et. Aute nisi veniam reprehenderit
+                            magna anim sint esse incididunt.
+                        </p>
+                        <a class="case-study" href="case-study-1.html"
+                            >View Case Study</a
+                        >
+                    </div>
+                </article>
+
+                <div class="overscroll"></div>
+            </main>
+
+            <footer>
+                <div class="flex-container">
+                    <a class href="#"><i class="fab fa-linkedin"></i></a>
+                    <a class href="#"><i class="fas fa-envelope"></i></a>
+                    <a class href="#"><i class="fab fa-medium"></i></a>
+                    <a class href="#"><i class="fab fa-dribbble-square"></i></a>
+                </div>
+            </footer>
         </div>
-    </div>
-
-    <footer>Footer!</footer>
-</body>
-
+    </body>
 </html>
