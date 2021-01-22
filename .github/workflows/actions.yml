@@ -26,25 +26,22 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Create Pull Request
-        id: pr
-        uses: peter-evans/create-pull-request@v3
+      - uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
         with:
-          token: ${{ secrets.GITHUB_TOKEN  }}
-          base: gh-pages
+          add: dist
+          author_name: Xavier Bergeron
+          author_email: xavbergeron@gmail.com
           branch: buildbot
-          commit-message: Built Site with GitHub Actions
-          committer: GitHub <noreply@github.com>
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          signoff: false
-          delete-branch: true
-          title: "Update dist build"
-          body: Update dist folder with latest changes
-          labels: |
-            automated pr
-          assignees: xaviergmail
+
+      - name: pull-request
+        uses: repo-sync/pull-request@v2
+        with:
+          id: pr
+          destination_branch: gh-pages
+          source_branch: buildbot
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check outputs
         run: |
-          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
-          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
+          echo "Pull Request Number - ${{ steps.pr.outputs.pr_number }}"
+          echo "Pull Request URL - ${{ steps.pr.outputs.pr_url }}"
