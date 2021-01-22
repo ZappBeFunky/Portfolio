@@ -21,6 +21,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+        with:
+          add: .
+          author_name: Xavier Bergeron
+          author_email: xavbergeron@gmail.com
+          branch: buildbot
+
       - name: Create Pull Request
         id: pr
         uses: peter-evans/create-pull-request@v3
