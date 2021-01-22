@@ -37,8 +37,8 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN  }}
-          base: gh-pages
-          branch: buildbot
+          base: buildbot
+          branch: gh-pages
           commit-message: Built Site with GitHub Actions
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
