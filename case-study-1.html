@@ -4,60 +4,94 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Case Study (Title) | Zapp BeFunky's Portfolio</title>
-        <link rel="stylesheet" href="styles/default.css" />
-        <link
-            rel="stylesheet"
-            href="styles/tablet.css"
-            media="screen and (min-width: 701px)"
-        />
-        <link
-            rel="stylesheet"
-            href="styles/desktop.css"
-            media="screen and (min-width: 992px)"
-        />
 
+        <link rel="stylesheet" href="styles/default.css" />
         <link rel="stylesheet" href="styles/project.default.css" />
-        <link
-            rel="stylesheet"
-            href="styles/project.tablet.css"
-            media="screen and (min-width: 701px)"
-        />
-        <link
-            rel="stylesheet"
-            href="styles/project.desktop.css"
-            media="screen and (min-width: 992px)"
-        />
+
+        <script
+            src="https://kit.fontawesome.com/8629546975.js"
+            crossorigin="anonymous"
+        ></script>
 
         <script src="scripts/main.js"></script>
     </head>
 
     <body>
-        <header>
-            <h1 id="name" class="">
-                <em>Zapp BeFunky</em>
+        <div id="image-full">
+            <i id="image-full-close" class="far fa-times-circle"></i>
+            <img id="image-full-preview" draggable="false" />
+        </div>
+        <header class="header">
+            <div id="name">
+                <h1>Zapp BeFunky</h1>
                 <span class="no-mobile">Interaction Designer</span>
                 <span class="no-mobile">Product Designer</span>
-                <em>UI/UX Designer</em>
-            </h1>
+                <h1>UI/UX Designer</h1>
+            </div>
+
+            <nav id="navbar">
+                <input
+                    class="menu-btn mobile-only"
+                    type="checkbox"
+                    id="menu-btn"
+                />
+                <label class="menu-icon mobile-only" for="menu-btn"
+                    ><span class="navicon"></span
+                ></label>
+
+                <ul class="menu">
+                    <a href="/"><li>Home</li></a>
+                    <a href="/about.html"><li>About Me</li></a>
+                    <a href="/"><li>Case Studies</li></a>
+                </ul>
+            </nav>
         </header>
 
         <main class="content">
             <article class="container">
-                <section class="project-info">
+                <section class="project-description">
                     <h1 class="project-title">
                         Improving the Cinema Experience
                     </h1>
                     <ul class="project-role">
-                        <li>Role: UX Design</li>
-                        <li>Time Frame: 4 Weeks</li>
-                        <li>Team: Alone</li>
+                        <li class="role">Role: UX Design</li>
+                        <li class="time">Time Frame: 4 Weeks</li>
+                        <li class="team">Team: Alone</li>
                     </ul>
+                </section>
+
+                <section class="project-info">
+                    <p>
+                        Going to the cinema is a fun experience, but ordering
+                        the tickets in many apps and website often feels like
+                        navigation in a really long and frustrating process.
+                    </p>
+
+                    <h1>Today’s Solution</h1>
+
+                    <p>
+                        After going through different cinema websites, I saw
+                        major UX problems in many of them. I chose to focus on
+                        the experience in one of the biggest cinema companies in
+                        my country, Cinema City — www.cinemacity.co.il, as a
+                        basis for the problem I wanted to fix. I downloaded and
+                        installed their iOS app to see how it works today.
+                    </p>
+
+                    <img src="images/case-1/today.png" />
                 </section>
 
                 <div class="overscroll"></div>
             </article>
         </main>
 
-        <footer>Footer!</footer>
+        <footer>
+            <div class="flex-container">
+                <a class href="#"><i class="fab fa-linkedin"></i></a>
+                <a class href="#"><i class="fas fa-envelope"></i></a>
+                <a class href="#"><i class="fab fa-medium"></i></a>
+                <a class href="#"><i class="fab fa-dribbble-square"></i></a>
+            </div>
+        </footer>
     </body>
 </html>

@@ -1,17 +1,126 @@
-.project-info {
+@import "project.tablet.css" screen and (min-width: 701px);
+@import "project.desktop.css" screen and (min-width: 992px);
+
+#image-full {
+    position: fixed;
+    pointer-events: none;
+    overflow-x: auto;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    z-index: 100;
+    display: flex;
+    flex: 1 0 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-full-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+#image-full-close {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    color: white;
+    cursor: pointer;
+    transition: transform 200ms;
+}
+
+#image-full-close:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#image-full.opened-once #image-full-preview {
+    transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#image-full.opened-once {
+    transition: opacity 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#image-full.opened {
+    pointer-events: all;
+    opacity: 1;
+}
+
+#image-full.opened #image-full-close {
+    display: inline;
+}
+
+#image-full.opened #image-full-preview {
+    transform: scale(1, 1);
+}
+
+#image-full-preview {
+    position: relative;
+    max-height: 80%;
+    height: fit-content;
+    margin: 0 1rem;
+    display: block;
+    transform: scale(0, 0);
+    user-select: none;
+}
+
+.project-description {
 }
 
 .project-title {
+    text-align: center;
 }
 
-..project-role {
-}
-
-.project-role ul {
+.project-role {
     padding-left: 0;
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .project-role li {
     list-style: none;
     list-style-position: inside;
+    margin: 4px 12px;
+}
+
+.project-role li::before,
+.project-role li::after {
+    content: " • ";
+    opacity: 0.5;
+}
+
+.project-role .role {
+    grid-area: role;
+}
+
+.project-role .time {
+    grid-area: time;
+}
+
+.project-role .team {
+    grid-area: team;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+img {
+    margin: 0 auto;
+    max-height: 300pxf;
+    display: block;
+    border-radius: 10px;
 }

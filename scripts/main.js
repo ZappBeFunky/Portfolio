@@ -1,7 +1,11 @@
 function scrollProjectsToMiddle() {
     const projectList = document.getElementById("project-list")
-    let secondProject = projectList.querySelector(".project:nth-of-type(2)")
-    secondProject.scrollIntoView({ inline: "center" })
+    if (projectList) {
+        const secondProject = projectList.querySelector(
+            ".project:nth-of-type(2)"
+        )
+        secondProject.scrollIntoView({ inline: "center" })
+    }
 }
 
 function installHamburger() {
@@ -31,7 +35,39 @@ function installHamburger() {
     })
 }
 
+const closableids = {
+    "image-full-preview": true,
+    "image-full-close": true,
+    "image-full": true,
+}
+function onImageClick(e) {
+    if (closableids[e.target.id] || e.target.nodeName.toLowerCase() === "img") {
+        const preview = document.getElementById("image-full")
+        if (preview.classList.contains("opened")) {
+            preview.classList.remove("opened")
+        } else {
+            if (!preview.classList.contains("opened-once")) {
+                preview.classList.add("opened-once")
+            }
+            preview.classList.add("opened")
+
+            const img = preview.querySelector("img")
+            img.src = e.target.getAttribute("src")
+            img.onload = () => {
+                setTimeout(() => {
+                    img.scrollIntoView({ inline: "center" })
+                }, 500)
+            }
+        }
+    }
+}
+
+function installImagePreview() {
+    window.addEventListener("click", onImageClick)
+}
+
 window.addEventListener("load", function () {
     scrollProjectsToMiddle()
     installHamburger()
+    installImagePreview()
 })
