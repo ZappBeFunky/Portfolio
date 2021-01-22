@@ -16,6 +16,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - run: git checkout -b buildbot
+
       - name: Build
         run: npm run build
 
@@ -31,7 +33,7 @@ jobs:
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
           delete-branch: true
-          title: 'Update dist build'
+          title: "Update dist build"
           body: Update dist folder with latest changes
           labels: |
             automated pr
