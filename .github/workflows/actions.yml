@@ -20,6 +20,7 @@ jobs:
           git push origin --delete buildbot || git branch -d buildbot || true
           git checkout main
           git checkout -b buildbot
+          git reset --hard origin/main
 
       - name: Build
         run: npm run build
