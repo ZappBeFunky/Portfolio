@@ -52,7 +52,7 @@ header img {
     text-align: center;
     background-color: black;
     color: white;
-    padding: 0.25em 0;
+    padding: 16px 0;
     margin: 0;
     width: 100%;
 }
@@ -136,14 +136,16 @@ footer a {
     background-repeat: no-repeat no-repeat;
     height: 100%;
     width: 80vw;
+    background-position: center center;
+    background-size: cover;
 }
 
 #project-1 .img {
-    background-image: url(https://loremflickr.com/800/800?random=1);
+    background-image: url(https://loremflickr.com/800/800?random=9);
 }
 
 #project-2 .img {
-    background-image: url(https://loremflickr.com/800/800?random=2);
+    background-image: url(https://loremflickr.com/800/800?random=8);
 }
 
 #project-3 .img {
