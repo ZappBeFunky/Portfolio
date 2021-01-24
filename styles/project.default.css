@@ -116,11 +116,33 @@
 
 .project-info {
     padding: 20px;
+    text-align: center;
+}
+
+.project-info:nth-child(3n) {
+    background-color: rgb(255, 233, 214);
+}
+.project-info:nth-child(3n + 1) {
+    background-color: rgb(101, 64, 98);
+}
+
+.project-info:nth-child(3n + 2) {
+    background-color: rgb(0, 136, 145);
+}
+
+.project-info {
+    padding: 20px;
+    text-align: center;
 }
 
 img {
     margin: 0 auto;
-    max-height: 300pxf;
+    width: 100%;
+    max-width: max-content;
     display: block;
     border-radius: 10px;
+}
+
+footer {
+    margin-top: 0;
 }
