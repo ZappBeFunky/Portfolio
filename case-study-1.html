@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Case Study (Title) | Zapp BeFunky's Portfolio</title>
+        <title>
+            Improving the Cinema Experience | Zapp BeFunky's Portfolio
+        </title>
+
+        <link rel="stylesheet" href="styles/header.css" />
         <link rel="stylesheet" href="styles/default.css" />
         <link
             rel="stylesheet"
@@ -28,36 +32,312 @@
             media="screen and (min-width: 992px)"
         />
 
+        <script
+            src="https://kit.fontawesome.com/8629546975.js"
+            crossorigin="anonymous"
+        ></script>
+
         <script src="scripts/main.js"></script>
     </head>
 
     <body>
-        <header>
-            <h1 id="name" class="">
-                <em>Zapp BeFunky</em>
+        <div id="image-full">
+            <i id="image-full-close" class="far fa-times-circle"></i>
+            <img id="image-full-preview" draggable="false" />
+        </div>
+        <header class="header">
+            <div id="name">
+                <h1>Zapp BeFunky</h1>
                 <span class="no-mobile">Interaction Designer</span>
                 <span class="no-mobile">Product Designer</span>
-                <em>UI/UX Designer</em>
-            </h1>
+                <h1>UI/UX Designer</h1>
+            </div>
+
+            <nav id="navbar">
+                <input
+                    class="menu-btn mobile-only"
+                    type="checkbox"
+                    id="menu-btn"
+                />
+                <label class="menu-icon mobile-only" for="menu-btn"
+                    ><span class="navicon"></span
+                ></label>
+
+                <ul class="menu">
+                    <a href="/"><li>Home</li></a>
+                    <a href="/about.html"><li>About Me</li></a>
+                    <a href="/"><li>Case Studies</li></a>
+                </ul>
+            </nav>
         </header>
 
         <main class="content">
-            <article class="container">
-                <section class="project-info">
+            <section class="project-description">
+                <div class="container">
                     <h1 class="project-title">
                         Improving the Cinema Experience
                     </h1>
                     <ul class="project-role">
-                        <li>Role: UX Design</li>
-                        <li>Time Frame: 4 Weeks</li>
-                        <li>Team: Alone</li>
+                        <li class="role">Role: UX Design</li>
+                        <li class="time">Time Frame: 4 Weeks</li>
+                        <li class="team">Team: Alone</li>
                     </ul>
-                </section>
+                </div>
+            </section>
 
-                <div class="overscroll"></div>
-            </article>
+            <section class="project-info">
+                <div class="container">
+                    <p>
+                        Going to the cinema is a fun experience, but ordering
+                        the tickets in many apps and website often feels like
+                        navigation in a really long and frustrating process.
+                    </p>
+
+                    <h1>Today’s Solution</h1>
+
+                    <p>
+                        After going through different cinema websites, I saw
+                        major UX problems in many of them. I chose to focus on
+                        the experience in one of the biggest cinema companies in
+                        my country, Cinema City — www.cinemacity.co.il, as a
+                        basis for the problem I wanted to fix. I downloaded and
+                        installed their iOS app to see how it works today.
+                    </p>
+
+                    <img src="images/case-1/today.png" />
+                </div>
+            </section>
+
+            <section class="project-info">
+                <div class="container">
+                    <h1>User Stories</h1>
+
+                    <p>
+                        In order to build realistic user stories, I surveyed 10
+                        people, aged between 22 to 32, who go to the cinema at
+                        least once every two months. The questions focused about
+                        the last time they went to the cinema. Main takeaways:
+                    </p>
+
+                    <p>
+                        Six said they wanted to watch a specific movie, so they
+                        were looking for the right time to see it.
+                    </p>
+
+                    <p>
+                        Two said they wanted to go to the cinema at a specific
+                        time of the week, so they were looking for the best
+                        movie available at that time.
+                    </p>
+
+                    <p>
+                        One said she wanted to go to the cinema during some
+                        evening this week.
+                    </p>
+
+                    <p>
+                        All of them wanted to go to a movie around their living
+                        / working area.
+                    </p>
+
+                    <h1>Pain Points</h1>
+
+                    <p>
+                        After making a few assumptions myself, I joined it with
+                        some more questions I asked in the survey to support /
+                        contradict my assumptions with data, and help me find
+                        the major and minor pain points.
+                    </p>
+
+                    <p>
+                        The current app does not support any of the user stories
+                        really well. It forces the user to give all the exact
+                        details (specific movie, specific theater, specific
+                        date, specific hour) before seeing if the screening is
+                        available / not available.
+                    </p>
+
+                    <p>6/10 complained that the process feels long.</p>
+
+                    <p>
+                        4/10 complained about not having seats after going
+                        through the entire process during busy evenings.
+                    </p>
+
+                    <p>
+                        2/10 Complained about having to pay extra fees they
+                        didn’t expect.
+                    </p>
+
+                    <p>
+                        Other complaints mentioned the app’s low speed or bugs.
+                    </p>
+                </div>
+            </section>
+
+            <section class="project-info">
+                <div class="container">
+                    <h1>Suggested Solution</h1>
+
+                    <p>
+                        The solution takes two of the main user stories into
+                        account. I split the options to either Search by Movie
+                        or Search by Time. I tried to offer relevant screenings
+                        at each stage of the process, with extra choices
+                        functioning as a smart filter option.
+                    </p>
+
+                    <img src="images/case-1/suggested-1.png" />
+                </div>
+            </section>
+
+            <section class="project-info">
+                <div class="container">
+                    <h1>Suggested Solution</h1>
+
+                    <p>1. Differentiation between the different user stories</p>
+                    <p>
+                        The two main user stories are people who are looking for
+                        a good time to watch the new Justice League movie (not
+                        too bad, by the way), and people who are looking for a
+                        nice movie to watch during Wednesday afternoon. These
+                        are just specific examples, but they help understand
+                        what does the user expect to see.
+                    </p>
+
+                    <p>
+                        This information made it easy to make the choice of
+                        splitting the browsing functioning, to ‘Search by Title’
+                        and ‘Search by Time’. Doing this, made the UI for both
+                        simpler and easier to navigate.
+                    </p>
+                    <img src="images/case-1/suggested-2.png" />
+                </div>
+            </section>
+
+            <section class="project-info">
+                <div class="container">
+                    <h1>2. Simplification of fields</h1>
+                    <p>
+                        When searching for a good movie to watch at a specific
+                        time, having a date picker is not really needed, since
+                        the tickets are only sold for the following week (true
+                        to the example website I chose), and updated every day.
+                        Choosing the exact time is not really needed at this
+                        stage. The user’s task is to choose a movie and a day /
+                        time of day. I chose to spread all the choices using big
+                        buttons that will be easily understandable to everybody,
+                        and hard to miss. Every choice filters the available
+                        movies, and highlights the relevant screen times.
+                    </p>
+                    <img src="images/case-1/simplification.png" />
+                </div>
+            </section>
+
+            <section class="project-info">
+                <div class="container">
+                    <h1>3. Helping the user make better choices</h1>
+                    <p>
+                        According to the survey, some of the frustrations come
+                        from the fact that they finally choose the right
+                        screening time + movie for them, only to realize there
+                        are no relevant available seats. I solved it by helping
+                        them make the right choice. Next to each screening (that
+                        will open a ‘choose seats’ dialog followed by payment
+                        and producing the ticket), I will show an icon hinting
+                        how many seats are available.
+                    </p>
+                    <img src="images/case-1/better-choices.png" />
+                </div>
+            </section>
+
+            <section class="project-info">
+                <div class="container">
+                    <p>And here is how it looks integrated in the UI</p>
+                    <img src="images/case-1/integrated.png" />
+                </div>
+            </section>
+
+            <section class="project-info">
+                <div class="container">
+                    <h1>4. Payment</h1>
+
+                    <p>
+                        I chose to show the payment once the user selects the
+                        seats. The price should be transparent and shown
+                        upfront, so there won’t be any surprises.
+                    </p>
+
+                    <p>
+                        I didn’t want to reinvent the checkout process, I
+                        believe this problem can be best solved by Apple Pay or
+                        Google Wallet. In the real app, there would need to be
+                        more traditional choices for payment.
+                    </p>
+
+                    <p>
+                        I also chose to add illustrations of tickets, to make it
+                        feel like the reward (the movie tickets) is just behind
+                        this next button. This, I believe, would make the
+                        process feel more rewarding.
+                    </p>
+
+                    <img src="images/case-1/payment.png" />
+                </div>
+            </section>
+
+            <section class="project-info">
+                <div class="container">
+                    <h1>Testing</h1>
+
+                    <p>
+                        I wanted to run a small experience to see if my solution
+                        works well. So I used these screens and built a
+                        prototype in InVision for the app. I shared it with 3
+                        friends who’ve never seen the app. I told them to:
+                    </p>
+
+                    <p>
+                        Try to buy 2 tickets to ‘Blade Runner 2049', today, to
+                        the screening with the least seats taken.
+                    </p>
+                    <p>
+                        Once you’re done, buy 2 tickets to any movie today in
+                        the evening.
+                    </p>
+
+                    <img src="images/case-1/testing.png" />
+                </div>
+            </section>
+
+            <section class="project-info">
+                <div class="container">
+                    <p>
+                        They were successful doing that, but it still doesn’t
+                        mean much :) It only means that it’s not too
+                        complicated. This is an MVP tested on very few people,
+                        and in the real world there are many more things to
+                        consider and monitor.
+                    </p>
+
+                    <p>
+                        If Cinema companies had more awareness to user
+                        experience, I’m sure more people would want to go to the
+                        cinemas. Maybe with this change, next time a new cool
+                        indie movie comes out, I might actually find someone
+                        who’d like to join me.
+                    </p>
+                </div>
+            </section>
         </main>
 
-        <footer>Footer!</footer>
+        <footer>
+            <div class="flex-container">
+                <a class href="#"><i class="fab fa-linkedin"></i></a>
+                <a class href="#"><i class="fas fa-envelope"></i></a>
+                <a class href="#"><i class="fab fa-medium"></i></a>
+                <a class href="#"><i class="fab fa-dribbble-square"></i></a>
+            </div>
+        </footer>
     </body>
 </html>
