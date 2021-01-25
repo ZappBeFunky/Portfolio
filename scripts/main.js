@@ -15,12 +15,9 @@ function scrollProjectsToMiddle() {
         const middle =
             (projectList.scrollWidth - scrollMargin / 2) / projects.length
 
-        console.log(projects.length)
-
         // TODO: Reset when viewport changes
         let xTarget
         projectList.addEventListener("scroll", function (evt) {
-            console.log("hi")
             requestAnimationFrame(() => {
                 if (!xTarget) {
                     xTarget = projects[2].getBoundingClientRect().x
@@ -50,8 +47,6 @@ function scrollProjectsToMiddle() {
                     p.querySelectorAll(":not(.img)").forEach(
                         (x) => (x.style.opacity = 1 - scale)
                     )
-
-                    console.log(i++, scale)
                 })
             })
         })
