@@ -1,4 +1,4 @@
-#image-full {
+image-full {
     position: fixed;
     pointer-events: none;
     overflow-x: auto;
@@ -114,6 +114,15 @@
 .project-info {
     padding: 20px;
     text-align: center;
+}
+
+.project-info p {
+    max-width: 65ch;
+    margin: 1em auto;
+}
+
+.project-sections {
+    background-image: url("/images/az-subtle.png");
 }
 
 .project-info:nth-child(3n) {
