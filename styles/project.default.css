@@ -122,7 +122,7 @@ image-full {
 }
 
 .project-sections {
-    background-image: url("/images/az-subtle.png");
+    background-image: url("../images/az-subtle.png");
 }
 
 .project-info:nth-child(3n) {

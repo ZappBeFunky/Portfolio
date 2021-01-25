@@ -14,7 +14,7 @@ body {
             rgba(255, 255, 255, 0.7) 0%,
             rgba(245, 245, 245, 0.4) 100%
         ),
-        url("/images/az-subtle.png");
+        url("../images/az-subtle.png");
 }
 
 img {
@@ -120,15 +120,15 @@ footer a {
 }
 
 #project-1 .img {
-    background-image: url("/images/cinema-1.jpg");
+    background-image: url("../images/cinema-1.jpg");
 }
 
 #project-2 .img {
-    background-image: url("/images/white-car.jpg");
+    background-image: url("../images/white-car.jpg");
 }
 
 #project-3 .img {
-    background-image: url("/images/statue.jpg");
+    background-image: url("../images/statue.jpg");
 }
 
 a.case-study {
