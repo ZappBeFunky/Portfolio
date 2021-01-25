@@ -3,6 +3,18 @@
     margin: 0 auto;
 }
 
+.project-info {
+    padding: 0;
+}
+
+.project-info img {
+    border-radius: 0;
+}
+
+.project-info .container.p-1 {
+    padding: 2rem !important;
+}
+
 img {
     margin: 0;
     width: 50%;

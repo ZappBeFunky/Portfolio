@@ -8,14 +8,25 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-image: linear-gradient(
-            -10deg,
-            rgba(255, 255, 255, 0.7) 0%,
-            rgba(245, 245, 245, 0.4) 100%
-        ),
-        url("../images/az-subtle.png");
-
     transform-style: preserve-3d;
+
+    --gradient: linear-gradient(
+        190deg,
+        rgba(192, 130, 213, 0.5) 0%,
+        rgba(162, 104, 184, 0.8) 100%
+    );
+
+    background-image: var(--gradient),
+        url("https://www.transparenttextures.com/patterns/black-paper.png"),
+        linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.5) 0%
+        ),
+        var(--img, url("../images/city.jpg"));
+    background-blend-mode: normal, darken, screen;
+    background-size: auto auto, auto auto, auto auto, cover;
+    background-position: center center;
 }
 
 img {
@@ -34,7 +45,7 @@ footer {
 
 .spacer {
     vertical-align: middle;
-    color: lightgray;
+    color: rgb(16, 16, 16);
     display: flex;
 }
 
@@ -42,7 +53,7 @@ footer {
     height: 1rem;
     width: 1rem;
     border-radius: 100%;
-    background-color: lightgray;
+    background-color: rgb(16, 16, 16);
     margin: 2rem 1rem;
 }
 
@@ -80,7 +91,8 @@ footer {
     display: none;
 }
 
-.project .description {
+.project .description,
+.project .description .squisher {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,7 +182,6 @@ a.case-study {
 .intro {
     padding: 2rem 2rem;
     max-width: 65ch;
-    margin: 0 auto;
     text-align: center;
     line-height: 1.25em;
     font-size: 1.3rem;

@@ -38,16 +38,8 @@ header {
     justify-content: center;
 }
 
-.project:nth-of-type(2n-1) .description {
-    margin-left: 2em;
-}
-
 .project:nth-of-type(2n + 0) {
     flex-direction: row-reverse;
-}
-
-.project:nth-of-type(2n + 0) .description {
-    margin-right: 2em;
 }
 
 .project .img {
@@ -66,4 +58,79 @@ header {
 
 a.case-study {
     margin-top: 1em;
+}
+
+.project {
+    justify-content: space-between;
+    padding: 0;
+}
+
+.project .img {
+    width: 50%;
+    height: 45vw;
+    border-radius: 0;
+    margin: 0;
+    flex: 1 0 50%;
+}
+
+.project .description {
+    width: 30%;
+    flex: 1 0 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.squisher {
+    width: 90%;
+}
+
+header {
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 0;
+}
+
+.project {
+    background-image: var(--gradient),
+        url("https://www.transparenttextures.com/patterns/black-paper.png"),
+        linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.5) 0%
+        ),
+        var(--img, url("../images/city.jpg"));
+    background-blend-mode: normal, darken, screen;
+    background-size: auto auto, auto auto, auto auto, cover;
+    background-position: center center;
+}
+
+.project:nth-child(3n + 1) {
+    --gradient: linear-gradient(
+        -10deg,
+        rgba(253, 182, 120, 0.5),
+        rgba(255, 224, 198, 0.8)
+    );
+    --img: url("https://images.unsplash.com/photo-1493928841026-e1ab0a590a61?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80");
+}
+
+.project:nth-child(3n) {
+    --gradient: linear-gradient(
+        190deg,
+        rgba(192, 130, 213, 0.5) 0%,
+        rgba(162, 104, 184, 0.8) 100%
+    );
+    --img: url("https://images.unsplash.com/photo-1611021809244-83074a8a42c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+}
+
+.project:nth-child(3n + 2) {
+    --gradient: linear-gradient(
+        190deg,
+        rgba(66, 189, 238, 0.5) 0%,
+        rgb(43, 173, 202, 0.8) 100%
+    );
+    --img: url("https://images.unsplash.com/photo-1546447601-852699cc6dee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80");
 }

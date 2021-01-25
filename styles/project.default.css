@@ -77,6 +77,7 @@
 }
 
 .project-description {
+    padding: 1rem 0;
 }
 
 .project-title {
@@ -126,33 +127,47 @@
     margin: 1em auto;
 }
 
-.project-sections {
-    background-image: url("../images/az-subtle.png");
+.project-info,
+.project-description {
+    background-image: var(--gradient),
+        url("https://www.transparenttextures.com/patterns/black-paper.png"),
+        linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.5) 0%
+        ),
+        var(--img, url("../images/city.jpg"));
+    background-blend-mode: normal, darken, screen;
+    background-size: auto auto, auto auto, auto auto, cover;
+    background-position: center center;
 }
 
-.project-info:nth-child(3n) {
-    background: linear-gradient(
+.project-info:nth-child(3n),
+.project-description {
+    --gradient: linear-gradient(
         -10deg,
-        rgba(255, 255, 255, 0.3),
-        rgba(245, 245, 245, 0.4)
+        rgba(253, 182, 120, 0.5),
+        rgba(255, 224, 198, 0.8)
     );
+    --img: url("https://images.unsplash.com/photo-1493928841026-e1ab0a590a61?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80");
 }
 
 .project-info:nth-child(3n + 1) {
-    background: linear-gradient(
+    --gradient: linear-gradient(
         190deg,
         rgba(192, 130, 213, 0.5) 0%,
         rgba(162, 104, 184, 0.8) 100%
     );
+    --img: url("https://images.unsplash.com/photo-1611021809244-83074a8a42c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
 }
 
 .project-info:nth-child(3n + 2) {
-    background-image: linear-gradient(
+    --gradient: linear-gradient(
         190deg,
         rgba(66, 189, 238, 0.5) 0%,
         rgb(43, 173, 202, 0.8) 100%
     );
-    color: black;
+    --img: url("https://images.unsplash.com/photo-1546447601-852699cc6dee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80");
 }
 
 .project-info {
