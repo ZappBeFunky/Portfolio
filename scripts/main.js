@@ -52,12 +52,14 @@ function onImageClick(e) {
             preview.classList.add("opened")
 
             const img = preview.querySelector("img")
-            img.src = e.target.getAttribute("src")
             img.onload = () => {
+                preview.classList.add("forcescroll")
                 setTimeout(() => {
-                    img.scrollIntoView({ inline: "center" })
+                    preview.classList.remove("forcescroll")
                 }, 500)
             }
+            img.src = e.target.getAttribute("src")
+            img.onload()
         }
     }
 }
