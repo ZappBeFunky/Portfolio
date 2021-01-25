@@ -10,7 +10,7 @@
     z-index: 100;
     display: flex;
     flex: 1 0 100%;
-    align-items: center;
+    flex-direction: column;
     overscroll-behavior: contain;
 }
 
@@ -64,7 +64,7 @@
 
 #image-full-preview {
     position: relative;
-    margin: 0 auto;
+    margin: 2rem auto;
     display: block;
     transform: scale(0, 0);
     user-select: none;
@@ -175,7 +175,17 @@ footer {
     margin-top: 0;
 }
 
-.project-info .flex-col {
-    justify-content: center;
-    align-items: center;
+#other-projects {
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+a.case-study {
+    margin-top: 1em;
+    max-width: 50%;
+}
+
+#other-projects .img {
+    width: 80%;
+    height: 25vh;
 }

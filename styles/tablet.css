@@ -7,7 +7,7 @@
 }
 
 .no-mobile {
-    display: initial;
+    display: block;
 }
 
 .mobile-only {
@@ -58,20 +58,6 @@ header {
 .project .description {
     flex-basis: 40%;
     align-items: flex-start;
-}
-
-.spacer {
-    vertical-align: middle;
-    color: lightgray;
-    display: flex;
-}
-
-.spacer .circle {
-    height: 1rem;
-    width: 1rem;
-    border-radius: 100%;
-    background-color: lightgray;
-    margin: 2rem 1rem;
 }
 
 a.case-study {
