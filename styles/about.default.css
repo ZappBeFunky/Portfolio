@@ -1,3 +1,7 @@
+header {
+    margin-bottom: 0;
+}
+
 .bookimages {
     display: flex;
     justify-content: space-evenly;
@@ -29,10 +33,16 @@
 #interests {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     /* align-items: center; */
     align-content: center;
     flex-flow: row wrap;
+    text-align: center;
+}
+
+#interests > :nth-child(1),
+#interests > :nth-child(2) {
+    flex-basis: 150px;
 }
 
 #interests section {
@@ -51,7 +61,7 @@
     list-style: none;
     list-style-position: inside;
 
-    text-align: left;
+    text-align: center;
     padding: 0;
 }
 
