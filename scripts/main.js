@@ -1,3 +1,5 @@
+console.log("Loaded!")
+
 function scrollProjectsToMiddle() {
     const projectList = document.getElementById("project-list")
     if (projectList) {
@@ -5,6 +7,54 @@ function scrollProjectsToMiddle() {
             ".project:nth-of-type(2)"
         )
         secondProject.scrollIntoView({ inline: "center" })
+
+        const projects = projectList.querySelectorAll("article")
+
+        const projectW = secondProject.scrollWidth
+        const scrollMargin = projectList.children[0].scrollWidth
+        const middle =
+            (projectList.scrollWidth - scrollMargin / 2) / projects.length
+
+        console.log(projects.length)
+
+        // TODO: Reset when viewport changes
+        let xTarget
+        projectList.addEventListener("scroll", function (evt) {
+            console.log("hi")
+            requestAnimationFrame(() => {
+                if (!xTarget) {
+                    xTarget = projects[2].getBoundingClientRect().x
+                }
+
+                const scrollLeft = projectList.scrollLeft
+                const sm2 = scrollMargin / 2
+
+                let i = 0
+                projects.forEach((p) => {
+                    const bRect = p.getBoundingClientRect()
+                    const xpos = xTarget - Math.abs(bRect.x)
+                    const scale =
+                        Math.min(
+                            Math.abs(
+                                scrollMargin / 2 - Math.abs(xpos - middle)
+                            ),
+                            projectW
+                        ) / projectW
+
+                    const vscale = 1 - scale * 0.2
+
+                    p.querySelector(
+                        ".img"
+                    ).style.transform = `scaleY(${vscale})`
+
+                    p.querySelectorAll(":not(.img)").forEach(
+                        (x) => (x.style.opacity = 1 - scale)
+                    )
+
+                    console.log(i++, scale)
+                })
+            })
+        })
     }
 }
 

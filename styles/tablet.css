@@ -10,6 +10,10 @@
     display: block;
 }
 
+.no-mobile-flex {
+    display: flex;
+}
+
 .mobile-only {
     display: none;
 }
