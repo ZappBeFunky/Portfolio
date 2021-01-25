@@ -2,3 +2,32 @@
     max-width: 1060px;
     margin: 0 auto;
 }
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.d-flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.d-flex-col-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.squisher {
+    width: 60%;
+}
+
+.project p,
+.project h2 {
+    font-size: 1.5em;
+}

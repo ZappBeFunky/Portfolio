@@ -1,39 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me | Zapp BeFunky's Portfolio</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <title>Zapp BeFunky's Portfolio</title>
-    <link rel="stylesheet" href="styles/default.css" />
-    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 701px)" />
-    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 992px)" />
-    <script src="scripts/main.js"></script>
-    <script src="https://kit.fontawesome.com/8629546975.js" crossorigin="anonymous"></script>
-</head>
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/default.css" />
+        <link rel="stylesheet" href="styles/about.default.css" />
 
-<body>
-    <header>
-        <div class="container">
-            <p>I'm The Actualizer</p>
+        <link
+            rel="stylesheet"
+            href="styles/tablet.css"
+            media="screen and (min-width: 701px)"
+        />
+        <link
+            rel="stylesheet"
+            href="styles/about.tablet.css"
+            media="screen and (min-width: 701px)"
+        />
+
+        <link
+            rel="stylesheet"
+            href="styles/desktop.css"
+            media="screen and (min-width: 992px)"
+        />
+        <link
+            rel="stylesheet"
+            href="styles/about.desktop.css"
+            media="screen and (min-width: 992px)"
+        />
+
+        <script
+            src="https://kit.fontawesome.com/8629546975.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="scripts/main.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <div id="name">
+                <h1>Zapp BeFunky</h1>
+                <span class="no-mobile">Interaction Designer</span>
+                <span class="no-mobile">Product Designer</span>
+                <h1>UI/UX Designer</h1>
+            </div>
+
+            <nav id="navbar">
+                <input
+                    class="menu-btn mobile-only"
+                    type="checkbox"
+                    id="menu-btn"
+                />
+                <label class="menu-icon mobile-only" for="menu-btn"
+                    ><span class="navicon"></span
+                ></label>
+
+                <ul class="menu">
+                    <a href="/Portfolio/"><li>Home</li></a>
+                    <a href="/Portfolio/about.html"><li>About Me</li></a>
+                    <a href="/Portfolio/case-study-1.html"
+                        ><li>Case Studies</li></a
+                    >
+                </ul>
+            </nav>
+        </header>
+
+        <div id="sections">
+            <div>
+                <p class="intro">
+                    Hi, my name is Zapp BeFunky. Do you really want to know?
+                    Some say I am so ruff, so tuff. I can make you dance! Let's
+                    take it slow and easy because I want to be your man. It'll
+                    be alright. There's 6 song titles in there. I'm a nerd.
+                </p>
+            </div>
+            <div>
+                <section id="recommendedbooks" class="container p-1">
+                    <h1 class="recommend-title">Books I Recommend</h1>
+                    <div class="bookimages">
+                        <img src="images/book-1.jpg" />
+
+                        <img src="images/book-2.jpg" />
+
+                        <img src="images/book-3.jpg" />
+
+                        <img src="images/book-4.jpg" />
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <main id="aboutme" class="container p-1">
+                    <h1>About me</h1>
+
+                    <div id="interests">
+                        <section>
+                            <h3>My Interests</h3>
+                            <ul>
+                                <li>Art</li>
+                                <li>Travel</li>
+                                <li>Golf</li>
+                                <li>Coffee</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h3>Want to Learn</h3>
+                            <ul>
+                                <li>Firebase</li>
+                                <li>Svelte</li>
+                                <li>Snowpack</li>
+                                <li>Machine Learning</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h3>My Achievements</h3>
+                            <ul>
+                                <li>
+                                    Times Person of the Year Excellent Award for
+                                    Art-work (2014)
+                                </li>
+                                <li>
+                                    Nobel Prize for the Funkiest Man on earth
+                                    (1984)
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h3>My Goals</h3>
+                            <ul>
+                                <li>Interstellar Travel</li>
+                                <li>Cure Cancer</li>
+                                <li>Pay Parent's Mortgage</li>
+                            </ul>
+                        </section>
+                    </div>
+                </main>
+            </div>
+
+            <div>
+                <section id="mythoughtprocess" class="container p-1">
+                    <h1>My Thought Process</h1>
+                    <div class="sections">
+                        <section>
+                            <h3>My Design Thinking Process</h3>
+                            <a class="case-study" href="#">Read Blog Post</a>
+                        </section>
+                        <section>
+                            <h3>
+                                How I collect Quantitative<br />& Qualitative
+                                Data
+                            </h3>
+                            <a class="case-study" href="#">Read Blog Post</a>
+                        </section>
+                    </div>
+                </section>
+            </div>
         </div>
-    </header>
-    <section>
-        <p>About me</p>
-    </section>
 
-    <section>
-        <p>My interest</p>
-    </section>
-
-    <section>
-        <p>My Achievement</p>
-    </section>
-
-    <section>
-        <p>My Goals</p>
-    </section>
-</body>
-
+        <footer>
+            <div class="flex-container">
+                <a class href="#"><i class="fab fa-linkedin"></i></a>
+                <a class href="#"><i class="fas fa-envelope"></i></a>
+                <a class href="#"><i class="fab fa-medium"></i></a>
+                <a class href="#"><i class="fab fa-dribbble-square"></i></a>
+            </div>
+        </footer>
+    </body>
 </html>

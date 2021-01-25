@@ -1,0 +1,154 @@
+header {
+    margin-bottom: 0;
+}
+
+.bookimages {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    align-content: center;
+    flex-flow: row wrap;
+}
+
+.bookimages img {
+    width: 90px;
+    flex-basis: 34%;
+    margin: 1rem;
+
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.recommend-title {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#aboutme {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#interests {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+#interests > :nth-child(1),
+#interests > :nth-child(2) {
+    flex-basis: 150px;
+}
+
+#interests section {
+    flex: 1 0 45%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#interests section h4 {
+    margin-top: 0;
+}
+
+#interests section h3 {
+    text-decoration: underline;
+}
+
+#interests ul {
+    list-style: none;
+    list-style-position: inside;
+
+    text-align: center;
+    padding: 0;
+}
+
+#interests ul li {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+#mythoughtprocess {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#mythoughtprocess .sections {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    text-align: center;
+}
+
+#mythoughtprocess section {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 30%;
+}
+
+body {
+    background-image: url("https://www.transparenttextures.com/patterns/black-paper.png"),
+        linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.5) 0%
+        ),
+        url("../images/city.jpg");
+    background-blend-mode: darken, screen;
+    background-size: auto auto, auto auto, cover;
+}
+
+#sections > * {
+    background: var(--gradient);
+}
+
+#sections > :nth-child(3n + 2) {
+    --gradient: linear-gradient(
+        -10deg,
+        rgba(253, 182, 120, 0.5),
+        rgba(255, 224, 198, 0.8)
+    );
+}
+
+#sections > :nth-child(3n + 1) {
+    --gradient: linear-gradient(
+        190deg,
+        rgba(192, 130, 213, 0.5) 0%,
+        rgba(162, 104, 184, 0.8) 100%
+    );
+}
+
+#sections > :nth-child(3n) {
+    --gradient: linear-gradient(
+        190deg,
+        rgba(66, 189, 238, 0.5) 0%,
+        rgb(43, 173, 202, 0.8) 100%
+    );
+}
+
+#sections > * {
+    padding: 1.5rem 1rem;
+}
+
+#sections > * > h4 {
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 0;
+}

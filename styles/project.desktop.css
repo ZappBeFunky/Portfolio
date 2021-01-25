@@ -2,3 +2,50 @@
     max-width: 1060px;
     margin: 0 auto;
 }
+
+.project-info {
+    padding: 0;
+}
+
+.project-info img {
+    border-radius: 0;
+}
+
+.project-info .container.p-1 {
+    padding: 2rem !important;
+}
+
+img {
+    margin: 0;
+    width: 50%;
+    display: block;
+}
+
+#other-projects {
+    align-self: stretch;
+}
+
+#user-stories > :first-child {
+    margin-right: 1.5rem;
+}
+
+#user-stories > :last-child {
+    margin-left: 1.5rem;
+}
+
+#other-projects article:first-child {
+    margin-right: 1.5rem;
+}
+
+#other-projects article:last-child {
+    margin-left: 1.5rem;
+}
+
+#other-projects article {
+    width: 50%;
+}
+
+#other-projects .img {
+    width: 80%;
+    height: 40vh;
+}
