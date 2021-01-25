@@ -104,13 +104,18 @@ footer {
 
 footer {
     margin-top: 4rem;
+    padding: 1em 0;
+    background: black;
+}
+
+footer h2 {
+    color: white;
+    text-align: center;
 }
 
 footer .flex-container {
     display: flex;
     justify-content: center;
-    padding: 1em 0;
-    background: black;
 }
 
 footer a {
