@@ -1,0 +1,98 @@
+body {
+    background-color: teal;
+    margin: 0;
+}
+
+main {
+    padding-top: 100px
+}
+ #container{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    align-items: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}  
+    
+.aboutme{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+
+}
+
+.learnmore{
+    width: 200px;
+    height: 200px;
+    background: none;
+    border: 1px solid black;
+
+
+}
+
+.myachievements{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.mygoal{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.myinterest{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.section {
+    display: flex;
+    background: violet;
+    margin: 10px;
+    padding: 5%;
+    justify-content: center;
+    height: 10%;
+    width: 150px;
+    
+}
+
+ .bookimages{
+     display: flex;
+     justify-content: space-evenly;
+     
+ }
+
+ .bookimages div img{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 10px;
+    height: 90px;
+    width: 90px;
+    left: 60px;
+    top: 500px;
+     
+ }
+
+ .recommend-title{
+     text-align: center;
+     
+ }
+
+p #aboutme{
+    display: flex;
+    margin: 20%;
+
+aboutmythoughtprocess {
+
+}
