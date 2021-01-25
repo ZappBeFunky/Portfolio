@@ -174,3 +174,8 @@ img {
 footer {
     margin-top: 0;
 }
+
+.project-info .flex-col {
+    justify-content: center;
+    align-items: center;
+}

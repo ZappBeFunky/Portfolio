@@ -149,3 +149,35 @@ a.case-study {
     line-height: 1.25em;
     font-size: 1.3rem;
 }
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex-grow {
+    flex: 1 0 auto;
+}
+
+.flex-shrink {
+    flex: 0 1 auto;
+}
+
+.p-1 {
+    padding: 1rem;
+}

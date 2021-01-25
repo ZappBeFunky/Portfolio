@@ -2,3 +2,9 @@
     max-width: 1060px;
     margin: 0 auto;
 }
+
+img {
+    margin: 0;
+    width: 50%;
+    display: block;
+}
