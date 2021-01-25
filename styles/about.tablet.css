@@ -1,3 +1,7 @@
 #interests section {
     flex: 1 0 34%;
 }
+
+.bookimages img {
+    flex-basis: 20%;
+}
