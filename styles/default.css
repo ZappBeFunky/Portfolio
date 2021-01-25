@@ -14,7 +14,7 @@ body {
             rgba(255, 255, 255, 0.7) 0%,
             rgba(245, 245, 245, 0.4) 100%
         ),
-        url("https://www.transparenttextures.com/patterns/az-subtle.png");
+        url("/images/az-subtle.png");
 }
 
 img {
@@ -120,15 +120,15 @@ footer a {
 }
 
 #project-1 .img {
-    background-image: url(https://loremflickr.com/800/800?random=9);
+    background-image: url("/images/cinema-1.jpg");
 }
 
 #project-2 .img {
-    background-image: url(https://loremflickr.com/800/800?random=8);
+    background-image: url("/images/white-car.jpg");
 }
 
 #project-3 .img {
-    background-image: url(https://loremflickr.com/800/800?random=3);
+    background-image: url("/images/statue.jpg");
 }
 
 a.case-study {
